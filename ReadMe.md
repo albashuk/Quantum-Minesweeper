@@ -3,7 +3,7 @@
 ###Overview
 It is a game, where you need to open all cells of the field and do not blow on the mine. But mines change their position with some period. 
 
-![](https://github.com/albashuk/Quantum-Minesweeper/blob/master/1.jpg)
+![](https://github.com/albashuk/Quantum-Minesweeper/blob/master/1.gif)
 
 ###General structure
 The game takes the size of field and length of the period between changes like input information. Then, at the beginning and in the future changes, it repeatedly changes field by set_bombs(). At the same time, a player can open a cell. If there is a mine, the game ended. If it is an empty cell, then open some block with this cell inside by dfs() and reset the field view by change_textures(). If all cells are opened, the player wins, and the game is ended.
